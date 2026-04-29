@@ -2,25 +2,26 @@ export const projects = [
   {
     title: "Bodhayu – Air Quality Awareness Platform",
     description:
-      "Full-stack MERN app integrating AQI & Weather APIs with real-time data, geolocation, JWT auth, and scheduled notifications.",
-    images: [
-      "/images/bodhayu-1.png",
-      "/images/bodhayu-2.png",
+      "A scalable awareness platform delivering actionable air quality insights with secure access and real-time environmental intelligence.",
+    tech: ["MERN", "REST APIs", "JWT", "OAuth2"],
+    highlights: [
+      "Integrated real-time AQI + Weather APIs with geolocation insights.",
+      "Built and consumed 10+ REST APIs for modular data flows.",
+      "Implemented JWT + OAuth2 authentication with scheduled alerts.",
     ],
-    tech: ["MongoDB", "Express", "React", "Node.js", "JWT", "OAuth2", "APIs"],
     live: "https://bodhayu.vercel.app/",
     github: "https://github.com/vishakhatiti/Bodhayu",
   },
   {
     title: "Airbnb Clone – Property Booking Platform",
     description:
-      "Full-stack booking platform with authentication, property listings, and booking workflows using MERN stack.",
-    images: [
-      "/images/airbnb-1.png",
-      "/images/airbnb-2.png",
+      "A full-stack booking product with robust auth, listing management, and intuitive reservation journeys.",
+    tech: ["MERN", "JWT", "bcrypt", "CRUD APIs"],
+    highlights: [
+      "Developed authentication system using JWT + bcrypt.",
+      "Implemented CRUD APIs for listings and booking workflows.",
+      "Crafted a responsive UI optimized across device sizes.",
     ],
-    tech: ["MongoDB", "Express", "React", "Node.js", "JWT"],
-    live: "", // add if deployed later
     github: "https://github.com/vishakhatiti/Airbnb",
   },
 ];

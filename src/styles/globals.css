@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0f172a;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: rgb(248 250 252);
+}
+
+@media (min-width: 640px) {
+  .section-title {
+    font-size: 1.875rem;
+  }
+}
+
+.card {
+  border-radius: 1rem;
+  border: 1px solid rgb(30 41 59);
+  background: rgb(15 23 42 / 0.6);
+  padding: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgb(2 6 23 / 0.2);
+}
+
+.field {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(51 65 85);
+  background: rgb(30 41 59);
+  padding: 0.75rem 1rem;
+  color: rgb(248 250 252);
+  outline: none;
+}
+
+.field::placeholder {
+  color: rgb(148 163 184);
+}
