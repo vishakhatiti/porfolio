@@ -1,9 +1,11 @@
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+
 function App() {
   return (
     <>
-      <h1 style={{ textAlign: "center", marginTop: "40px" }}>
-        Portfolio Coming Soon 🚀
-      </h1>
+      <Navbar />
+      <Home />
     </>
   );
 }
