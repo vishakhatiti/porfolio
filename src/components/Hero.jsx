@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -20,7 +17,7 @@ export default function Hero() {
         </motion.div>
         <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }} className="mx-auto">
           <div className="rounded-full bg-gradient-to-br from-violet-500 to-sky-400 p-1 shadow-2xl shadow-violet-500/20">
-            <Image src="/images/Photo.png" alt="Vishakha Mane profile" width={300} height={300} className="h-64 w-64 rounded-full object-cover sm:h-72 sm:w-72" priority />
+            <img src="/images/Photo.png" alt="Vishakha Mane profile" width={300} height={300} className="h-64 w-64 rounded-full object-cover sm:h-72 sm:w-72" loading="eager" />
           </div>
         </motion.div>
       </div>
