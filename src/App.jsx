@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="bg-slate-900 text-slate-100 min-h-screen">
+    <div className="min-h-screen bg-[var(--bg)] text-[var(--text)] transition-colors duration-300">
       <Navbar />
       <main className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <Hero />

@@ -1,46 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
+:root {
+  --bg: #f8fafc;
+  --surface: rgba(255, 255, 255, 0.74);
+  --surface-solid: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: rgba(15, 23, 42, 0.1);
+  --accent: #4338ca;
+  --accent-2: #06b6d4;
 }
 
+.dark {
+  --bg: #020617;
+  --surface: rgba(15, 23, 42, 0.72);
+  --surface-solid: #0f172a;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --border: rgba(148, 163, 184, 0.2);
+  --accent: #6366f1;
+  --accent-2: #22d3ee;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 body {
-  background: #0f172a;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
 }
 
 .section-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  color: rgb(248 250 252);
-}
-
-@media (min-width: 640px) {
-  .section-title {
-    font-size: 1.875rem;
-  }
+  @apply text-2xl sm:text-3xl font-semibold tracking-tight;
 }
 
 .card {
-  border-radius: 1rem;
-  border: 1px solid rgb(30 41 59);
-  background: rgb(15 23 42 / 0.6);
-  padding: 1.5rem;
-  box-shadow: 0 10px 15px -3px rgb(2 6 23 / 0.2);
+  @apply rounded-2xl border p-6 shadow-sm backdrop-blur-xl;
+  border-color: var(--border);
+  background: var(--surface);
 }
 
-.field {
-  width: 100%;
-  border-radius: 0.75rem;
-  border: 1px solid rgb(51 65 85);
-  background: rgb(30 41 59);
-  padding: 0.75rem 1rem;
-  color: rgb(248 250 252);
-  outline: none;
+.tag {
+  @apply rounded-full border px-3 py-1 text-xs font-medium;
+  border-color: var(--border);
+  background: color-mix(in srgb, var(--surface-solid) 70%, transparent);
 }
 
-.field::placeholder {
-  color: rgb(148 163 184);
+.input {
+  @apply w-full rounded-xl border px-4 py-3 text-sm outline-none transition;
+  border-color: var(--border);
+  background: color-mix(in srgb, var(--surface-solid) 82%, transparent);
+}
+
+.input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
 }
