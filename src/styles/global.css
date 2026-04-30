@@ -1,0 +1,35 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* VARIABLES */
+:root {
+  --bg: #0b1220;
+  --card: #111a2e;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --primary: #4f46e5;
+}
+
+/* BODY */
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
